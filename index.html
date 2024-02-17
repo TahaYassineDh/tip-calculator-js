@@ -12,30 +12,33 @@
         <label for="bill-total">Bill Total</label>
         <div class="input-container">
           <span>$</span>
-          <input type="number" name="bill-total" id="bill-total" />
+          <input type="number" name="bill-total" id="bill-total" placeholder="10" onkeyup="calculateBill()"/>
         </div>
       </div>
       <div class="input-group">
         <label for="tip">Tip</label>
-        <div class="input-container">
+        <div class="input-container" >
           <span>%</span>
-          <input type="number" name="tip" id="tip" />
+          <input type="number" name="tip" id="tip" placeholder="0.00" onkeyup="calculateBill()"/>
         </div>
       </div>
 
       <div class="people-group">
         <label>People</label>
         <div class="increment-group">
-          <button class="inc">+</button>
-          <h3>1</h3>
-          <button class="dec">-</button>
+          <button class="inc" onclick="increasePeople()">+</button>
+          <h3 id="num">1</h3>
+          <button class="dec" onclick="decreasePeople()">-</button>
         </div>
         </div>
         <div class="total-per-person-group">
           <label>Total per Person</label>
-          <h3>$110.00</h3>
+          <h3>$<span id="totalp">0.00</span></h3>
         </div>
       </div>
     </div>
+
+
+    <script src="main.js"></script>
   </body>
 </html>
