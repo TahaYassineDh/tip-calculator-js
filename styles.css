@@ -1,15 +1,90 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
 
-
-
 /* Global */
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Karla' , sans-serif;
+  font-family: "Karla", sans-serif;
+  background: #8990ec;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: #272639;
+  color: white;
+  height: 80%;
+  width: 30%;
+  padding: 80px 20px;
+  border-radius: 50px;
+}
+
+label,
+span {
+  font-size: 40px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.input-container input {
+  width: 100%;
+  background: #353959;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  font-size: 30px;
+  padding: 5px;
+  color: white;
+}
+
+.people-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.total-per-person-group {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.increment-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+button {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+h3 {
+    text-align: center;
+    font-size: 20px;
 }

@@ -1,58 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tip Calculator ||TYDev</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator || TYDev</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <div class="container">
-        <h1 class="main-header">SPLIT IT</h1>
-        <div class="total-header">
-            <h1>TOTAL PER PERSON</h1>
-            <div class="total-header">
-                <label for="total">$</label>
-                <input type="number" value="44.94">
-
-            </div>
+      <div class="input-group">
+        <label for="bill-total">Bill Total</label>
+        <div class="input-container">
+          <span>$</span>
+          <input type="number" name="bill-total" id="bill-total" />
         </div>
-        <div class="bill-section">
-            <h1>BILL AMOUNT</h1>
-            <div class="bill-section">
-                <label for="bill">$</label>
-                <input type="number" value="112.34">
-
-            </div>
+      </div>
+      <div class="input-group">
+        <label for="tip">Tip</label>
+        <div class="input-container">
+          <span>%</span>
+          <input type="number" name="tip" id="tip" />
         </div>
-        <div class="tip-section">
-            <h1>TIP</h1>
-            <div class="tip-section">
-                <label for="tip">$</label>
-                <input type="number" value="22.47">
+      </div>
 
-            </div>
+      <div class="people-group">
+        <label>People</label>
+        <div class="increment-group">
+          <button class="inc">+</button>
+          <h3>1</h3>
+          <button class="dec">-</button>
         </div>
-        <div class="total-section">
-            <h1>TOTAL</h1>
-            <div class="input-section">
-                <label for="total">$</label>
-                <input type="number" value="134.81" name="total">
-
-            </div>
         </div>
-        <div class="split-section">
-            <h1>SPLIT</h1>
-            <div class="input-section">
-                
-                <input type="number" value="3">
-
-            </div>
+        <div class="total-per-person-group">
+          <label>Total per Person</label>
+          <h3>$110.00</h3>
         </div>
+      </div>
     </div>
-
-
-    <script src="main.js"></script>
-</body>
+  </body>
 </html>
